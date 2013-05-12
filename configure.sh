@@ -5,7 +5,7 @@ sudo apt-get update && sudo apt-get -y upgrade
 sudo apt-get install -y hostapd dnsmasq
 
 # give the Pi a static IP address
-sudo ifconfig wlan0 1.1.1.1
+sudo ifconfig wlan0 172.27.0.1
 
 # modify the network interface config file to support AP mode
 sudo python configure_network_interfaces.py

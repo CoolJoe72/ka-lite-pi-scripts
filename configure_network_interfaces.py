@@ -23,10 +23,9 @@ lines_to_comment_out = [
 wlan0_lines = [
     "",
     "iface wlan0 inet static",
-    "  address 1.1.1.1",
+    "  address 172.27.0.1",
     "  netmask 255.255.255.0",
-    "  pre-up sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp -j DNAT --to-destination 1.1.1.1",
-    "  pre-up sudo python %s/redirect_port80_to_port8008.py &" % os.path.dirname(os.path.realpath(__file__)),
+    "  pre-up sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp -j DNAT --to-destination 172.27.0.1",
 ]
 
 editing_wlan0 = False
