@@ -1,4 +1,4 @@
-ka-lite-pi-scripts
+RasPi-Mesh-scripts
 ==================
 
-Scripts and notes for setting up a KA Lite server on a Raspberry Pi in Access Point mode
+Scripts and notes for setting up a hostapd server on a Raspberry Pi in Access Point mode
